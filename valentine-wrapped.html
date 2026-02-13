@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monika's Valentine Wrapped �</title>
+    <style>
+        :root {
+            --bg: #191414;
+            --card: #282828;
+            --text: #ffffff;
+            --muted: #b3b3b3;
+            --accent: #e8b4cb;
+            --spotify-black: #000000;
+            --spotify-dark-gray: #121212;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 22px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image:
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG'),
+                url('IMG_7669.JPG');
+            background-size: 140px 140px;
+            background-position:
+                5% 5%,
+                20% 8%,
+                35% 12%,
+                50% 6%,
+                65% 10%,
+                80% 4%,
+                95% 9%,
+                8% 25%,
+                23% 30%,
+                38% 28%,
+                53% 32%,
+                68% 26%,
+                83% 31%,
+                92% 27%,
+                10% 45%,
+                25% 50%,
+                40% 48%,
+                55% 52%,
+                70% 46%,
+                85% 51%,
+                6% 65%,
+                21% 70%,
+                36% 68%,
+                51% 72%,
+                66% 66%,
+                81% 71%,
+                94% 67%,
+                12% 85%,
+                27% 90%,
+                42% 88%,
+                57% 92%,
+                72% 86%,
+                87% 91%;
+            background-repeat: no-repeat;
+            opacity: 0.5;
+            z-index: 0;
+            animation: floatPhotos 30s ease-in-out infinite;
+        }
+
+        @keyframes floatPhotos {
+
+            0%,
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            25% {
+                transform: translate(-10px, -5px) rotate(1deg);
+            }
+
+            50% {
+                transform: translate(5px, -10px) rotate(-1deg);
+            }
+
+            75% {
+                transform: translate(-5px, 10px) rotate(0.5deg);
+            }
+        }
+
+        .wrap {
+            width: min(720px, 100%);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 14px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 800;
+            letter-spacing: .2px;
+        }
+
+        .dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: var(--accent);
+            box-shadow: 0 0 25px rgba(29, 185, 84, .55);
+        }
+
+        .tag {
+            font-size: 12px;
+            color: var(--muted);
+            border: 1px solid rgba(255, 255, 255, .12);
+            padding: 6px 10px;
+            border-radius: 999px;
+            backdrop-filter: blur(6px);
+        }
+
+        .card {
+            background: rgba(40, 40, 40, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 16px;
+            padding: 28px;
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.3),
+                0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .card:before {
+            content: "";
+            position: absolute;
+            inset: -2px;
+            background: linear-gradient(90deg,
+                    rgba(232, 180, 203, .15),
+                    rgba(255, 255, 255, .05),
+                    rgba(232, 180, 203, .15));
+            filter: blur(22px);
+            z-index: 0;
+        }
+
+        .card>* {
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            margin: 0 0 8px;
+            font-size: 30px;
+            line-height: 1.1;
+            font-weight: 900;
+        }
+
+        .sub {
+            margin: 0 0 18px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px;
+        }
+
+        .stat {
+            background: rgba(30, 30, 30, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 10px;
+            padding: 16px;
+            min-height: 108px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .stat.unwrapped {
+            background: rgba(29, 185, 84, .15);
+            border-color: rgba(29, 185, 84, .4);
+            box-shadow: 0 4px 20px rgba(29, 185, 84, .2);
+        }
+
+        .stat.wrapped {
+            background: rgba(25, 25, 25, 0.7);
+            border-color: rgba(255, 255, 255, 0.08);
+        }
+
+        .stat-content {
+            transition: all 0.3s ease;
+        }
+
+        .stat.wrapped .stat-content {
+            opacity: 0;
+            transform: scale(0.8);
+        }
+
+        .stat.wrapped::after {
+            content: "💝";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+            opacity: 0.7;
+        }
+
+        /* Different animations for each stat */
+        .stat:nth-child(1).unwrapped .stat-content {
+            animation: slideInLeft 0.6s ease-out;
+        }
+
+        .stat:nth-child(2).unwrapped .stat-content {
+            animation: slideInRight 0.6s ease-out;
+        }
+
+        .stat:nth-child(3).unwrapped .stat-content {
+            animation: fadeInScale 0.8s ease-out;
+        }
+
+        .stat:nth-child(4).unwrapped .stat-content {
+            animation: slideInRight 0.6s ease-out;
+        }
+
+        .stat:nth-child(4).unwrapped #youValue {
+            animation: flashGrow 3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+            transform-origin: center;
+            display: inline-block;
+        }
+
+        .stat:nth-child(5).unwrapped .stat-content {
+            animation: rotateIn 0.6s ease-out;
+        }
+
+        .stat:nth-child(6).unwrapped .stat-content {
+            animation: flipIn 0.7s ease-out;
+        }
+
+        @keyframes slideInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInScale {
+            0% {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes flashGrow {
+            0% {
+                opacity: 0;
+                transform: scale(0.2);
+            }
+
+            30% {
+                opacity: 1;
+                transform: scale(1.4);
+            }
+
+            55% {
+                opacity: 1;
+                transform: scale(1.8);
+            }
+
+            70% {
+                opacity: 1;
+                transform: scale(2);
+            }
+
+            85% {
+                opacity: 1;
+                transform: scale(1.1);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes rotateIn {
+            0% {
+                opacity: 0;
+                transform: rotate(-180deg) scale(0.5);
+            }
+
+            100% {
+                opacity: 1;
+                transform: rotate(0) scale(1);
+            }
+        }
+
+        @keyframes flipIn {
+            0% {
+                opacity: 0;
+                transform: perspective(400px) rotateY(90deg);
+            }
+
+            100% {
+                opacity: 1;
+                transform: perspective(400px) rotateY(0);
+            }
+        }
+
+        .stat:hover {
+            background: rgba(232, 180, 203, .1);
+            border-color: rgba(232, 180, 203, .3);
+            transform: translateY(-2px);
+        }
+
+        .kicker {
+            font-size: 12px;
+            color: var(--muted);
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .value {
+            font-size: 26px;
+            font-weight: 900;
+            letter-spacing: .2px;
+            color: var(--accent);
+        }
+
+        .footer {
+            margin-top: 18px;
+            color: var(--muted);
+            font-size: 13px;
+            text-align: center;
+        }
+
+        .heart {
+            color: var(--accent);
+            font-weight: 900;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .heart:hover {
+            transform: scale(1.1);
+        }
+
+        .heart.beating {
+            animation: heartbeat 0.8s ease-in-out;
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+
+            25% {
+                transform: scale(1.3);
+            }
+
+            50% {
+                transform: scale(1);
+            }
+
+            75% {
+                transform: scale(1.3);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .play-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: var(--accent);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: var(--bg);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(232, 180, 203, .3);
+        }
+
+        .play-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(232, 180, 203, .5);
+        }
+
+        .floating-hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+        .floating-heart {
+            position: absolute;
+            font-size: 20px;
+            color: var(--accent);
+            animation: float-up 3s ease-out forwards;
+        }
+
+        @keyframes float-up {
+            0% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translateY(-200px) scale(1.5);
+            }
+        }
+
+        @media (max-width:520px) {
+            .grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            .card {
+                border-radius: 6px;
+            }
+        }
+
+        @media (max-width:400px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="logo">
+                <span class="dot"></span>
+                <span>Monika's Valentine Wrapped</span>
+            </div>
+            <div class="tag">Love Edition • 2026</div>
+        </div>
+
+        <div class="card">
+            <h1>Monika's Valentine Wrapped <span class="heart">💖</span></h1>
+            <p class="sub">Not Spotify stats… just the real ones.</p>
+
+            <div class="grid">
+                <div class="stat wrapped">
+                    <div class="stat-content">
+                        <div class="kicker">Your vibe</div>
+                        <div class="value">Cutie-Pie</div>
+                    </div>
+                </div>
+
+                <div class="stat wrapped">
+                    <div class="stat-content">
+                        <div class="kicker">Minutes spent thinking about you this year</div>
+                        <div class="value" id="minutesCounter">0</div>
+                    </div>
+                </div>
+
+                <div class="stat wrapped">
+                    <div class="stat-content">
+                        <div class="kicker">Favourite memory</div>
+                        <div class="value">Your 22nd / Summer Ball</div>
+                    </div>
+                </div>
+
+                <div class="stat wrapped">
+                    <div class="stat-content">
+                        <div class="kicker">My most replayed thought</div>
+                        <div class="value" id="youValue">You</div>
+                    </div>
+                </div>
+
+                <div class="stat wrapped">
+                    <div class="stat-content">
+                        <div class="kicker">Love genre</div>
+                        <div class="value">00's Romantic R&B</div>
+                    </div>
+                </div>
+
+                <div class="stat wrapped">
+                    <div class="stat-content">
+                        <div class="kicker">Your smile ranking</div>
+                        <div class="value">#1 in the world</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="floating-hearts" id="floatingHearts"></div>
+    <button class="play-button" id="playButton">▶</button>
+
+    <script>
+        const playButton = document.getElementById('playButton');
+        const heart = document.querySelector('.heart');
+        const floatingHearts = document.getElementById('floatingHearts');
+        const minutesCounter = document.getElementById('minutesCounter');
+        const stats = document.querySelectorAll('.stat');
+        let isPlaying = false;
+        let allUnwrapped = false;
+
+        // Add click listeners to each stat
+        stats.forEach(stat => {
+            stat.addEventListener('click', () => {
+                if (stat.classList.contains('wrapped')) {
+                    stat.classList.remove('wrapped');
+                    stat.classList.add('unwrapped');
+
+                    // Start counter if this is the minutes stat
+                    if (stat.querySelector('#minutesCounter')) {
+                        startCounter();
+                    }
+                } else {
+                    stat.classList.remove('unwrapped');
+                    stat.classList.add('wrapped');
+
+                    // Reset counter if this is the minutes stat
+                    if (stat.querySelector('#minutesCounter')) {
+                        minutesCounter.textContent = '0';
+                    }
+                }
+            });
+        });
+
+        playButton.addEventListener('click', () => {
+            isPlaying = !isPlaying;
+            playButton.textContent = isPlaying ? '❚❚' : '▶';
+
+            // Toggle all stats
+            if (allUnwrapped) {
+                stats.forEach(stat => {
+                    stat.classList.remove('unwrapped');
+                    stat.classList.add('wrapped');
+                });
+                minutesCounter.textContent = '0';
+                allUnwrapped = false;
+            } else {
+                stats.forEach(stat => {
+                    stat.classList.remove('wrapped');
+                    stat.classList.add('unwrapped');
+                });
+                startCounter();
+                allUnwrapped = true;
+            }
+
+            // Trigger heartbeat animation
+            heart.classList.remove('beating');
+            void heart.offsetWidth;
+            heart.classList.add('beating');
+
+            // Create floating hearts
+            createFloatingHearts();
+        });
+
+        heart.addEventListener('click', () => {
+            heart.classList.remove('beating');
+            void heart.offsetWidth;
+            heart.classList.add('beating');
+            createFloatingHearts();
+        });
+
+        function startCounter() {
+            let count = 0;
+            const target = 999999;
+            const increment = Math.ceil(target / 100);
+
+            const timer = setInterval(() => {
+                count += increment;
+                if (count >= target) {
+                    count = target;
+                    clearInterval(timer);
+                }
+                minutesCounter.textContent = count.toLocaleString();
+            }, 20);
+        }
+
+        function createFloatingHearts() {
+            for (let i = 0; i < 8; i++) {
+                setTimeout(() => {
+                    const heart = document.createElement('div');
+                    heart.className = 'floating-heart';
+                    heart.textContent = '💖';
+                    heart.style.left = Math.random() * window.innerWidth + 'px';
+                    heart.style.bottom = '50px';
+                    floatingHearts.appendChild(heart);
+
+                    setTimeout(() => heart.remove(), 3000);
+                }, i * 100);
+            }
+        }
+    </script>
+</body>
+
+</html>
